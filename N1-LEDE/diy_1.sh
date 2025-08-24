@@ -19,13 +19,6 @@ git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git -b main package/passwall_package
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 
-
-
-git clone -b v5-lua --single-branch --depth 1 https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone -b lua --single-branch --depth 1 https://github.com/sbwml/luci-app-alist package/alist
-git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/lucky
-#添加自定义的软件包源
-
 # Remove packages
 #删除lean库中的插件，使用自定义源中的包。
 rm -rf feeds/packages/net/v2ray-geodata
