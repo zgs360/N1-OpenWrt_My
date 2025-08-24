@@ -24,6 +24,10 @@ git clone --depth 1 https://github.com/ophub/luci-app-amlogic package/amlogic
 #git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
+# => passwall2
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git -b main package/passwall_package
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+
 
 #删除库中的插件，使用自定义源中的包。
 rm -rf feeds/luci/themes/luci-theme-argon
