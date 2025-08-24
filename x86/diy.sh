@@ -49,3 +49,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 
 #修改默认时间格式
 sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
+
+
+#修改密码
+sed -i 's/^root:.*:/root:$1$/CMrDMda$DtkE3eQ4LVs9H2kwcRWF5/:19664:0:99999:7:::/g' package/base-files/files/etc/shadow
