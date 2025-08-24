@@ -15,8 +15,8 @@ sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generat
 
 # Add packages
 #添加科学上网源
-git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+#git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+#git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic package/amlogic
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go package/ddnsgo
 #git clone --depth 1 https://github.com/sbwml/luci-app-mosdns package/mosdns
