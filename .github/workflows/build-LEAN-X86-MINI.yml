@@ -6,8 +6,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: x86/.config-mini
-  DIY_SH: x86/diy.sh
+  CONFIG_FILE: x86/diy.config
+  DIY_SH: x86/diy_1.sh
   FILES: x86/files
   TZ: Asia/Shanghai
 
