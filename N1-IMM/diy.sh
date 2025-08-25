@@ -10,17 +10,19 @@ function git_sparse_clone() {
 }
 
 # Default IP
-sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.3/g' package/base-files/files/bin/config_generate
+
+
 
 
 # Add packages
 #添加科学上网源
 #git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone --depth 1 https://github.com/ophub/luci-app-amlogic package/amlogic
+#git clone --depth 1 https://github.com/ophub/luci-app-amlogic package/amlogic
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go package/ddnsgo
 git clone --depth 1 https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone --depth 1 https://github.com/sbwml/luci-app-alist package/alist
+#git clone --depth 1 https://github.com/sbwml/luci-app-alist package/alist
 #git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
@@ -46,6 +48,8 @@ rm -rf feeds/luci/applications/luci-app-argon-config
 #sed -i 's/services/vpn/g' package/luci-app-openvpn-server/luasrc/model/cbi/openvpn-server/*.lua
 #sed -i 's/services/vpn/g' package/luci-app-openvpn-server/luasrc/view/openvpn/*.htm
 
+#修改密码
+sed -i 's/^root:.*:/root:$1$q6Qf.IUu$Bd2tIMFHYYNOsmsIRBwHC0:19650:0:99999:7:::/g' package/base-files/files/etc/shadow
 
 #替换luci-app-socat为https://github.com/chenmozhijin/luci-app-socat
 #rm -rf feeds/luci/applications/luci-app-socat
