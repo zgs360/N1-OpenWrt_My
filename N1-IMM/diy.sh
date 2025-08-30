@@ -49,7 +49,7 @@ rm -rf feeds/luci/applications/luci-app-argon-config
 #sed -i 's/services/vpn/g' package/luci-app-openvpn-server/luasrc/view/openvpn/*.htm
 
 #修改密码
-sed -i 's/^root:.*:/root:$1$q6Qf.IUu$Bd2tIMFHYYNOsmsIRBwHC0:19650:0:99999:7:::/g' package/base-files/files/etc/shadow
+sed -i 's/^root:.*:/root:$1$sKnYlDLr$7fZvROo6z5iKO9FIYGEbf0:18248:0:99999:7:::/g' package/base-files/files/etc/shadow
 
 #替换luci-app-socat为https://github.com/chenmozhijin/luci-app-socat
 #rm -rf feeds/luci/applications/luci-app-socat
